@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picture Displayer</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <h1 style="text-align: center">Picture Displayer</h1>
+          <strong
+            ><p style="font-size: large; text-align: center">
+              Click a name from the dropdown to see a picture of that particular
+              character
+            </p></strong
+          >
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <div class="row" style="margin-top: 10px">
+        <div class="col-md-3">
+          <a href="#"
+            ><span onclick="changeImage('elizabeth.jpg')">Elizabeth</span></a
+          ><br />
+          <a href="#"><span onclick="changeImage('uzaki.jpg')">Uzaki</span></a
+          ><br />
+          <a href="#"
+            ><span onclick="changeImage('uraraka.png')">Uraraka</span></a
+          ><br />
+          <a href="#"><span onclick="changeImage('nezuko.jpg')">Nezuko</span></a
+          ><br />
+          <a href="#"
+            ><span onclick="changeImage('Biscuit.jpg')">Biscuit</span></a
+          ><br /><br>
+          <button
+            style="width: 100%"
+            id="button"
+            class="btn btn-primary btn-area"
+            onclick="clearImg()"
+          >
+            Clear Image
+          </button>
+        </div>
+        <div class="col-md-9">
+          <img id="imgDisp" src="" />
+        </div>
+      </div>
+
+    </div>
+
+    <script src="pic_displayer.js"></script>
+  </body>
+</html>
